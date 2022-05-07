@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab-4(3)</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+  table{
+    border:1px solid black;
+    border-collapse: collapse;
+    width:100%;
+    }
+  td{
+    border:1px solid black;
+  }
+</style>
+</head>
+<body>
+  <!--Here we are making a table using thead and tbody -->
+  <table id="tab">
+    <thead>
+    <tr id="r1" ALIGN="CENTER" >
+      <td>s/n</td>
+      <td>Name</td>
+      <!-- defining class here so that we can refrence it in jquery-->
+      <td class="tds">Class</td>
+      <td>Reg.No.</td>
+    </tr>
+    </thead>
+    <tbody id="tb">
+    <tr id="r2" ALIGN="CENTER" >
+      <td>1</td>
+      <td>Ali</td>
+      <td class="tds">BSCS</td>
+      <td>10</td>
+    </tr>
+      <tr id="r3" ALIGN="CENTER">
+      <td>2</td>
+      <td>Ayesha</td>
+      <td class="tds">MSCS</td>
+      <td>12</td>
+    </tr>
+      <tr id="r4" ALIGN="CENTER" >
+      <td>3</td>
+      <td>Sana</td>
+      <td class="tds">BSCS</td>
+      <td>14</td>
+    </tr>
+      <tr id="r5" ALIGN="CENTER" >
+      <td>4</td>
+      <td>Sara</td>
+      <td class="tds">MSCS</td>
+      <td>15  </td>
+    </tr>
+      <tr id="r6" ALIGN="CENTER" >
+      <td>5</td>
+      <td>Ahmed</td>
+      <td class="tds">BSCS</td>
+      <td>16</td>
+    </tr>
+    <!--this tbody will be used to add row at the end of table -->
+    </tbody>
+  </table>
+  <button id="show" style="position:absolute;left:30%;">Search Students</button>
+  <button id="add" style="position:absolute;left:52%;">Add Students</button>
+  <script src="script3.js"> </script>
+</body>
+</html>
